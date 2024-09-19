@@ -1,0 +1,31 @@
+@mixin header{
+    width: 1440px;
+    height: 130px;
+    grid-area: header;
+    background-color: #2E2E2E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @content;
+    @include desktop{
+        width: 1024px;
+    };
+    @include tablet{
+        width: 768px;
+        font-size: 30px;
+        height: 100px;
+    }
+    @include mobile{
+        width: 425px;
+        font-size: 30px;
+    }
+    @include mini_mobile{
+        width: 375px;
+        font-size: 25px;
+    }
+    @include tablet;
+    @include mobile;
+    @include mini_mobile;
+    
+}

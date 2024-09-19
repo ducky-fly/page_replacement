@@ -1,0 +1,47 @@
+@import './header/header', './nav/nav', './section/section', './footer/footer';
+@import '../screen/screen-view';
+
+@mixin layout{
+    width: 1440px;
+    display: grid;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    background-color: white;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "section"
+    "section"
+    "section"
+    "section"
+    "section"
+    "footer"
+    ;
+    @include desktop{
+        width: 1024px;
+    }
+    @include tablet{
+        width: 768px;
+    }
+    @include mobile{
+        width: 425px;
+    }
+    @include mini_mobile{
+        width: 375px;
+    }
+    header{
+        @include header;
+    
+    }
+    nav{
+        @include nav;
+        
+    }
+    section{
+        @include section;
+    }
+    footer{
+        @include footer;
+    }
+}

@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf2ff;
+}
+
+.wapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wapper .layout {
+  width: 1440px;
+  display: grid;
+  font-family: "Playfair Display";
+  font-size: 50px;
+  background-color: white;
+  grid-template-areas: "header" "nav" "section" "section" "section" "section" "section" "section" "footer";
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout {
+    width: 1024px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout {
+    width: 768px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout {
+    width: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout {
+    width: 375px;
+  }
+}
+.wapper .layout header {
+  width: 1440px;
+  height: 130px;
+  grid-area: header;
+  background-color: #2E2E2E;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout header {
+    width: 1024px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout header {
+    width: 768px;
+    font-size: 30px;
+    height: 100px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout header {
+    width: 425px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout header {
+    width: 375px;
+    font-size: 25px;
+  }
+}
+.wapper .layout nav {
+  width: 1440px;
+  height: 145px;
+  grid-area: nav;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout nav {
+    width: 1024px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout nav {
+    width: 768px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout nav {
+    width: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout nav {
+    width: 375px;
+  }
+}
+.wapper .layout nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.wapper .layout nav ul li {
+  width: 25%;
+  height: 100%;
+}
+.wapper .layout nav ul li button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-family: "Playfair Display";
+  font-size: 50px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout nav ul li button {
+    font-size: 30px;
+    height: 70%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout nav ul li button {
+    font-size: 20px;
+    height: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout nav ul li button {
+    font-size: 20px;
+    height: 70%;
+  }
+}
+.wapper .layout nav ul li button:hover {
+  color: white;
+  background-color: #FF7675;
+}
+.wapper .layout section {
+  width: 1440px;
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section {
+    width: 1024px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section {
+    width: 768px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section {
+    width: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section {
+    width: 375px;
+  }
+}
+.wapper .layout section .tren {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+.wapper .layout section .tren .tren1 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren1 {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren1 {
+    margin-top: -50px;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren1 {
+    margin-top: -50px;
+    align-items: center;
+  }
+}
+.wapper .layout section .tren .tren1 p {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  margin: 0 6px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren1 p {
+    font-size: 28px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren1 p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren1 p {
+    font-size: 15px;
+  }
+}
+.wapper .layout section .tren .tren1 ul {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren1 ul {
+    margin-right: -20px;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren1 ul {
+    margin-right: -40px;
+    align-items: center;
+  }
+}
+.wapper .layout section .tren .tren1 ul li {
+  width: 50px;
+  height: 100%;
+  margin: 0 8px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren1 ul li {
+    height: 90%;
+    width: 45px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren1 ul li {
+    height: 70%;
+    width: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren1 ul li {
+    height: 70%;
+    width: 35px;
+  }
+}
+.wapper .layout section .tren .tren1 ul li button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren1 ul li button {
+    font-size: 28px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren1 ul li button {
+    font-size: 25px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren1 ul li button {
+    font-size: 20px;
+  }
+}
+.wapper .layout section .tren .tren1 ul li button:hover {
+  color: white;
+  background-color: #FF7675;
+}
+.wapper .layout section .tren .tren2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 1400px;
+  height: 60px;
+  margin-top: 50px;
+  margin-left: 29px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren2 {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren2 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren2 {
+    margin-top: 10px;
+  }
+}
+.wapper .layout section .tren .tren2 p {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  margin-right: 42px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren2 p {
+    font-size: 28px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren2 p {
+    font-size: 20px;
+    margin-left: -20px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren2 p {
+    font-size: 15px;
+    margin-left: -20px;
+    margin-right: 0;
+  }
+}
+.wapper .layout section .tren .tren2 input {
+  width: 1165px;
+  height: 60px;
+  border: 1px solid black;
+  font-size: 32px;
+  padding: 21px 19px 20px 23px;
+  letter-spacing: 10px;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .tren .tren2 input {
+    width: 700px;
+    height: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren2 input {
+    width: 470px;
+    height: 30px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren2 input {
+    height: 20px;
+    width: 230px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren2 input {
+    height: 10px;
+    width: 210px;
+    margin-left: 10px;
+  }
+}
+.wapper .layout section .tren .tren3 {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  justify-content: end;
+  margin-top: 21px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren3 {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren3 {
+    margin-top: -10px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren3 {
+    margin-top: -20px;
+  }
+}
+.wapper .layout section .tren .tren3 button {
+  width: 110px;
+  height: 100%;
+  background-color: #FF7675;
+  cursor: pointer;
+  margin: 35px 61px 34px 1256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .tren .tren3 button {
+    width: 90px;
+    height: 50px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren3 button {
+    width: 80px;
+    height: 40px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren3 button {
+    width: 80px;
+    height: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren3 button {
+    width: 60px;
+    height: 30px;
+    margin-right: 30px;
+  }
+}
+.wapper .layout section .tren .tren3 button p {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  color: white;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .tren .tren3 button p {
+    font-size: 28px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .tren .tren3 button p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .tren .tren3 button p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .tren .tren3 button p {
+    font-size: 20px;
+  }
+}
+.wapper .layout section .hr-dau {
+  width: 1300px;
+  margin: 0 auto 64px auto;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .hr-dau {
+    width: 900px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .hr-dau {
+    margin-top: -100px;
+    width: 650px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .hr-dau {
+    margin-top: -120px;
+    width: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .hr-dau {
+    margin-top: -150px;
+    width: 300px;
+  }
+}
+.wapper .layout section .giua {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-size: 50px;
+}
+.wapper .layout section .giua .tieu-de {
+  width: 100%;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 59px;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .giua .tieu-de {
+    font-size: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .giua .tieu-de {
+    font-size: 35px;
+    margin-top: -50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .giua .tieu-de {
+    font-size: 28px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .giua .tieu-de {
+    font-size: 25px;
+    margin-top: -50px;
+  }
+}
+.wapper .layout section .giua .noi-dung {
+  width: 1164px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .giua .noi-dung {
+    width: 700px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .giua .noi-dung {
+    width: 650px;
+    margin-top: -50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .giua .noi-dung {
+    width: 350px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .giua .noi-dung {
+    width: 350px;
+    margin-top: -50px;
+  }
+}
+.wapper .layout section .giua .noi-dung div {
+  width: 100%;
+  height: 67px;
+  margin-bottom: 58px;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .giua .noi-dung div {
+    font-size: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .giua .noi-dung div {
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .giua .noi-dung div {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .giua .noi-dung div {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+.wapper .layout section .hr-cuoi {
+  width: 1300px;
+  margin: 64px auto;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .hr-cuoi {
+    width: 900px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .hr-cuoi {
+    margin-top: -200px;
+    width: 650px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .hr-cuoi {
+    margin-top: -200px;
+    width: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .hr-cuoi {
+    margin-top: -200px;
+    width: 300px;
+  }
+}
+.wapper .layout section .cuoi {
+  width: 100%;
+  height: 32px;
+  margin: 0 auto 64px auto;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout section .cuoi {
+    width: 900px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout section .cuoi {
+    width: 768px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout section .cuoi {
+    width: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout section .cuoi {
+    width: 300px;
+  }
+}
+.wapper .layout footer {
+  width: 100%;
+  height: 250px;
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout footer {
+    width: 1024px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout footer {
+    width: 768px;
+    font-size: 20px;
+    margin-top: -30px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout footer {
+    width: 425px;
+    font-size: 20px;
+    margin-top: -60px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout footer {
+    width: 375px;
+    font-size: 15px;
+    margin-top: -60px;
+  }
+}
+.wapper .layout footer .f-giua {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wapper .layout footer .f-giua {
+    width: 700px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wapper .layout footer .f-giua {
+    width: 550px;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .wapper .layout footer .f-giua {
+    width: 350px;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .wapper .layout footer .f-giua {
+    width: 300px;
+    font-size: 15px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+.wapper .layout footer .f-giua .fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.wapper .layout footer .f-giua .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.wapper .layout footer .f-giua .github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}/*# sourceMappingURL=index.css.map */
